@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay S's Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+
+        .nav-link:hover {
+            color: #ff7e5f !important;
+        }
+
+        .hero-section {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            height: 600px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 4em;
+            margin-bottom: 0.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-section p {
+            font-size: 1.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px 0;
+            border: 6px solid transparent;
+            background-image: linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(to right, #ff7e5f, #feb47b);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+        }
+
+        .content-section {
+            padding: 60px 0;
+        }
+
+        .content-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+
+        .content-section:nth-of-type(even) {
+            background-color: #fff;
+        }
+
+        .content-section:nth-of-type(odd) {
+            background-color: #f4f4f4;
+        }
+
+        .content-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .skill-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
+        }
+
+        .skill-icon:hover {
+            transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.1);
+            box-shadow: 0 8px 16px rgba(255, 126, 95, 0.5), 0 0 30px rgba(255, 126, 95, 0.5);
+        }
+
+        .education-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .certification-image {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #0c975d;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 2em;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #ff7e5f;
+        }
+
+        .btn-gradient {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn-gradient:hover {
+            background: linear-gradient(to left, #ff7e5f, #feb47b);
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">Vinay S</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="about" class="content-section">
+    <div class="container text-center">''
+        <h2>About Me</h2>
+        <img src="images/IMG_6132.jpg" alt="Vinay S" class="profile-image">
+        <p>Hi, I am Vinay S, 23 years old, DevOps Engineer with experience in automating deployments with Jenkins and other CI/CD tools, containerizing and managing applications using Docker and Kubernetes, proficient in administrating Linux and optimizing infrastructure provisioning with Terraform. Skilled in leveraging AWS Cloud Platform for managing IT infrastructure...</p>
+        <a href="icons/Sumanth-MV-Resume.pdf" download class="btn btn-gradient">
+            <i class="fas fa-download"></i> Resume
+        </a>
+    </div>
+</section>
+
+<section id="skills" class="content-section">
+    <div class="container text-center">
+        <h2>Skills</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="icons/aws.jpeg" alt="AWS" class="skill-icon">
+                <h3>AWS Solution Architect</h3>
+                <p>Experience in designing scalable, high-availability systems on AWS.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="icons/gitlab.jpeg" alt="GitLab" class="skill-icon">
+                <h3>GitLab</h3>
+                <p>Proficient in GitLab and version controlling.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="icons/docker.jpeg" alt="Docker" class="skill-icon">
+                <h3>Docker</h3>
+                <p>Skilled in containerization.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="icons/bash.jpeg" alt="Bash Scripting" class="skill-icon">
+                <h3>Bash Scripting</h3>
+                <p>Strong knowledge of Bash
+                     scripting and Linux OS.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="icons/kubernetes.jpeg" alt="Kubernetes" class="skill-icon">
+                <h3>Kubernetes</h3>
+                <p>Mastering Container Orchestration for Efficient and Scalable Deployments.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="icons/terraform.jpeg" alt="HashiCorp Terraform" class="skill-icon">
+                <h3>HashiCorp Terraform</h3>
+                <p>Experience in infrastructure as code using Terraform.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="icons/ansible.jpeg" alt="Ansible" class="skill-icon">
+                <h3>Ansible</h3>
+                <p>Proficient in configuration management with Ansible.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="icons/jenkins.jpeg" alt="Jenkins" class="skill-icon">
+                <h3>Jenkins</h3>
+                <p>Experience in continuous integration and delivery with Jenkins.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="icons/sonarqube.jpeg" alt="SonarQube" class="skill-icon">
+                <h3>SonarQube</h3>
+                <p>Skilled in static code analysis with SonarQube.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="icons/html.jpeg" alt="HTML" class="skill-icon">
+                <h3>HTML</h3>
+                <p>Proficient in HTML for web development.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="icons/css.jpeg" alt="CSS" class="skill-icon">
+                <h3>CSS</h3>
+                <p>Expert in CSS for styling web pages.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="icons/python.jpeg" alt="Python" class="skill-icon">
+                <h3>Python</h3>
+                <p>Experienced in Python programming.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="icons/java.jpeg" alt="Java" class="skill-icon">
+                <h3>Java</h3>
+                <p>Skilled in Java programming.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="certifications" class="content-section">
+    <div class="container text-center">
+        <h2>Certifications</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>AWS Certified Solutions Architect Associate</h3>
+                <a href="https://www.udemy.com/certificate/UC-ac8bd059-c4e5-46f6-876d-a85d06aab7ee/" target="_blank" class="btn btn-gradient">
+                    <i class="fas fa-certificate"></i> Udemy
+                </a>
+            </div>
+            <div class="col-md-4">
+                <h3>The Complete DevOps Bootcamp</h3>
+                <a href="https://www.udemy.com/certificate/UC-9fde89da-a106-412a-9244-cde986f250d4/" target="_blank" class="btn btn-gradient">
+                    <i class="fas fa-certificate"></i> Udemy
+                </a>
+            </div>
+            <div class="col-md-4">
+                <h3>Kodekloud Labs: Hands on DevOps Bootcamp</h3>
+                <a href="https://kodekloud.com/certificate-verification/2DF18B6C188E-2DF87609D4EC-2DF17FCE0220/" target="_blank" class="btn btn-gradient">
+                    <i class="fas fa-certificate"></i> Kodekloud
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="content-section">
+    <div class="container text-center">
+        <h2>Education</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="images/jnnce.jpeg" alt="Education" class="education-icon">
+                <h3>Master of Computer Application</h3>
+                <p>Jawaharlal Nehru National College of Engineering</p>
+            </div>
+            <div class="col-md-12">
+                <img src="images/kuvempu.jpeg" alt="Education" class="education-icon">
+                <h3>Bsc Computer Science</h3>
+                <p>Government Science college Bhadravathi</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="content-section">
+    <div class="container text-center">
+        <h2>Contact</h2>
+        <p>Feel free to get in touch with me:</p>
+        <div class="social-icons">
+            <a href="mailto:vinaysvinays39@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/sumanth2002" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vinay-s-87365727b" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>Contact Number: 9108944804</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Vinay S. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
